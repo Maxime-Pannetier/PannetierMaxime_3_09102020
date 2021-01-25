@@ -634,4 +634,36 @@ header i
     animation: spin .5s linear 0s 10;
   }
 
+/* ------------------ ANIMATION APPARITION DES PLATS -----------------------*/
 
+.presentation-plat
+{
+    transform: translateY(0px);
+    animation-name: upload;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes upload{
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.two /* SECOND PLAT */
+{
+    animation-delay: 300ms
+}
+
+.three /* TROISIEME PLAT */
+{
+    animation-delay: 600ms
+}
