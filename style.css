@@ -667,3 +667,35 @@ header i
 {
     animation-delay: 600ms
 }
+
+/* --------------- ANIMATION APPARITION COCHE VALIDEE ---------------------*/
+
+.presentation-plat:hover .prix-validation /* DECALAGE DE LA DIV PRIX-VALIDATION */
+{
+    transform:translateX(-50%);
+    transition: transform 400ms;
+}
+
+.presentation-plat:hover .nom-plat p /* CACHER LE TEXTE SI CASE NOM TROP PETITE */
+{
+    width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: width 400ms;
+}
+
+.presentation-plat:hover .validation i /* ROTATION ICON VALIDE */
+{
+    transform: rotate(360deg);
+    transition: transform 1000ms;
+}
+
+
+
+
+
+
+
+
+
