@@ -1,0 +1,590 @@
+/* GENERAL -------------------------------------------------------------- */
+
+html, body
+{
+margin: 0;
+    background-color: #f6f6f6;
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family:Roboto, sans-serif;
+}
+
+.old
+{
+    visibility: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.logo
+{
+    width: 165px;
+    height: 30px;
+}
+
+.big-font
+{
+    font-size: 25px;
+}
+
+.middle-font
+{
+    font-size: 20px;
+}
+
+em
+{
+    font-style: normal;
+}
+
+/* -------------------------------------------------------------*/
+/* -------------- INDEX.HTML -----------------------------------*/
+/* -------------------------------------------------------------*/
+
+
+
+
+/* HEADER ------------------------------------------------------------------------- */
+
+header
+{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #cecece;
+    font-size: 20px;
+
+}
+
+/* LOCALISATION -------------------------------------------------------------------- */
+
+#localisation
+{   
+    width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#localisation i
+{
+    margin-right: 15px;
+}
+
+#localisation p
+{
+    width: 140px;
+    height: 20px;
+}
+
+/* PRESENTATION ----------------------------------------------------------------------- */
+
+#presentation
+{
+    width: 100%;
+    height: 285px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+
+#presentation strong
+{
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#presentation em
+{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+button
+{
+    display: block;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC );
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 10px #c6c6c6;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+button p
+{
+    width: 175px;
+    height: 15px;
+    margin: auto;
+    color: #fff;
+}
+
+/* FONCTIONNEMENT ------------------------------------------------------------------- */
+
+#fonctionnement
+{
+    width: 100%;
+    height: 440px;
+    padding: 40px 20px 50px 20px;
+    background-color: #fff;
+}
+
+#fonctionnement p
+{
+    font-weight:bold;
+    margin-left: 25px;
+}
+
+
+#mode-emplois
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+}
+
+.etape-emplois
+{
+    width: 100%;
+    height: 75px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 25px 25px 1fr;
+    box-shadow: 5px 5px 10px #e9e9e9;
+}
+
+.icon-fonction
+{
+    color: #7e7e7e;
+    margin-left: 10px;
+}
+
+.etape-emplois:hover
+{
+    background-color: #f5edff;
+}
+
+.etape-emplois:hover > .fas
+{
+    color: #9356dc;
+}
+
+.num-etape
+{
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    background-color: #9356dc;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    right: 13px;
+    
+}
+
+
+
+
+/* LISTE DES RESTAURANTS -------------------------------------------------------------------*/
+
+#restaurants
+{
+    width: 100%;
+    height: 1225px;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+
+#liste-restaurants
+{
+    width: 100%;
+    height: 1060px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-row-gap: 15px;
+}
+
+.image-resto
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.new-dish
+{
+    width: 80px;
+    height: 30px;
+    background-color: #99e2d0;
+    color: #008766;
+    position: relative;
+    bottom: 95%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#liste-restaurants figure
+{
+    height: 250px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px #c6c6c6;
+}
+
+.image-restau
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#liste-restaurants figcaption
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    padding: 0 15px;
+}
+
+
+.bouton-like-unlike
+{
+    position: relative;
+    z-index: 1;
+}
+
+.unvalide:active + .bouton-like
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+.unvalide:active
+{
+    z-index: -1;
+    opacity: 0;
+}
+
+.bouton-like
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(#9c47fc, #356ad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    z-index: -1;
+    transition: transform 250ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton-like-unlike .far.fa-heart.unvalide
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton-like-unlike .fas.fa-heart.valide
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER -------------------------------------------*/ 
+
+footer
+{
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+    color: #fff;
+    background-color: #353535;
+    font-size: 15px;
+}
+
+footer .logo
+{
+    filter: invert(100%);
+    width: 100px;
+    object-fit: contain;
+}
+
+footer ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+footer li
+{
+    margin-bottom: 7px;
+}
+
+footer i
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+footer a
+{
+    color: #fff;
+}
+
+
+
+/* -------------------------------------------------------------*/
+/* -------------- RESTAURANTS.HTML -----------------------------*/
+/* -------------------------------------------------------------*/
+
+
+/* ---------------HEADER ---------------------------------------*/
+
+header i
+{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    color: black;
+}
+
+
+
+/* -------------- IMAGE DE PRESENTATION ------------------------*/
+
+.image-presentation
+{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.image-presentation img
+{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    object-fit: contain;
+}
+
+/* --------------- MENU -(NOM + ENTREE + PLAT + DESSERT -------*/
+
+#menu
+{
+    width: 100%;
+    height: 1195px;
+    margin-top: -30px;
+    background-color: #f6f6f6;
+    padding: 0 15px 0 15px;
+    z-index: 1;
+    position: relative;
+    top: -20px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+
+#menu h2
+{
+    font-family: Shrikhand , sans-serif
+}
+
+
+
+/* --------------- NOM + BOUTON LIKE -----------------*/
+#nom-restau
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#nom-restau .bouton-like-unlike
+{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.bouton-like-unlike i
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* --------SECTION DU MENU (ENTREE PLAT DESSERT) --------*/
+
+/* --------TYPE -----------------------------------------*/
+
+.plat
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.plat h3   /* entrée plat dessert */
+{
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+.trait /* surlignement du type de plat */
+{
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin-bottom: 15px;
+}
+
+
+/* ------------------ LISTE DE PLATS ------------*/
+
+.liste-plats
+{
+    display: grid;
+    grid-row-gap: 15px;
+    
+}
+
+.presentation-plat
+{
+    width: 100%;
+    height: 68px;
+    display: grid;
+    grid-template-columns: 80% 40%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #c6c6c6;
+    opacity: 0;
+}
+
+/* NOM DU PLAT */
+
+.nom-plat
+{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em
+}
+
+.nom-plat strong
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nom-plat em
+{
+    font-style: normal;
+    font-size: 10px;
+}
+
+.nom-plat p
+{
+    margin: auto 0 15px 0;
+}
+
+/* PRIX + VALIDATION */
+
+.prix-validation
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+}
+
+.prix-validation .prix
+{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.prix-validation .prix p
+{
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.validation
+{
+    width: 100%;
+    height: 100%;
+    background-color: #99E2D0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu button
+{
+    margin: 50px auto;
+}
+
+
+
