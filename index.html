@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" media="screen and (min-width: 767px)" href="tablet_resolution.css" />
+    <link rel="stylesheet" media="screen and (min-width: 991px)" href="computer_resolution.css" type="text/css" /><!-- responsive-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> <!-- favicon-->
+    <title>OhMyFood</title>
+    <script src="https://kit.fontawesome.com/5e30c8a0f2.js" crossorigin="anonymous"></script> <!-- icon font awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+   
+
+</head>
+    
+<body>
+    
+<!-- LOADING SPINNER -->
+    <div id=loader>
+        <div id="loading-spinner"></div>
+    </div>
+    
+<!-- HEADER LOGO -->
+    <header>
+        <img class=logo src="images/logo/ohmyfood.png" alt="ohmyfood"/>
+    </header>
+
+    
+<!-- LOCALISATION -->
+    <div id="localisation">
+        <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+    </div>
+
+    
+<!-- PRESENTATION -->
+    <div id=presentation>
+        <strong class="big-font">Réservez le menu qui vous convient</strong><br><em class="middle-font">Découvrez des restaurants d'exception, séléctionnés par nos soins.</em>
+        <button><p>Explorer nos restaurants</p></button>
+    </div>
+
+<!-- FONCTIONNEMENT -->
+    <div id=fonctionnement> 
+        <h2>Fonctionnement</h2>  
+        <div id=mode-emplois>
+            <div class=etape-emplois> 
+                <div class="num-etape">1</div>
+                <i class="fas fa-mobile-alt icon-fonction"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class=etape-emplois>
+                <div class="num-etape">2</div>
+                <i class="fas fa-list icon-fonction"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class=etape-emplois>
+                <div class="num-etape">3</div>
+                <i class="fas fa-store icon-fonction"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </div>       
+    </div>
+
+<!-- LISTE DES RESTAURANTS -->
+    <div id=restaurants>
+        <h2>Restaurants</h2>
+        <div id=liste-restaurants> <!--attention au float "nouveau"-->
+                <a href="palette.html">
+                <figure>
+                    <div class="image-resto">
+                        <img class=image-restau src="images/restaurants/la-palette-du-gout.jpg">
+                        <div class="new-dish">Nouveau</div>
+                    </div>
+                    <figcaption>
+                        <p><strong>La palette du goût</strong><br><em>Ménilmontant</em></p>
+                        <div class="bouton-like-unlike">
+                            <i class="far fa-heart unvalide fa-lg"></i> <!-- bouton unlike default -->
+                            <div class="bouton-like">
+                                <i class="fas fa-heart valide fa-lg"></i>
+                            </div>
+                        </div>
+                    </figcaption> 
+                </figure>
+            </a>
+            
+            <a href="enchantee.html">
+                <figure>
+                    <div class="image-resto">
+                        <img class=image-restau src="images/restaurants/la-note-enchantee.jpg">
+                        <div class="new-dish">Nouveau</div>
+                    </div>
+                    <figcaption>
+                        <p><strong>La note enchantée</strong><br><em>Charonne</em></p>
+                        <div class="bouton-like-unlike">
+                            <i class="far fa-heart unvalide fa-lg"></i> <!-- bouton unlike default -->
+                            <div class="bouton-like">
+                                <i class="fas fa-heart valide fa-lg"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            
+            <a href="francaise.html">
+                <figure>
+                    <div class="image-resto">
+                        <img class=image-restau src="images/restaurants/a-la-francaise.jpg">
+                        <div class="new-dish old">Nouveau</div>
+                    </div>
+                    <figcaption>
+                        
+                        <p><strong>A la française</strong><br><em>Cité Rouge</em></p>
+                        <div class="bouton-like-unlike">
+                            <i class="far fa-heart unvalide fa-lg"></i> <!-- bouton unlike default -->
+                            <div class="bouton-like">
+                                <i class="fas fa-heart valide fa-lg"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    
+                </figure>
+            </a>
+            
+            <a href="delice.html">
+                <figure>
+                    <div class="image-resto">
+                        <img class=image-restau src="images/restaurants/le-delice-des-sens.jpg">
+                        <div class="new-dish old">Nouveau</div>
+                    </div>
+                    <figcaption>
+                        
+                        <p><strong>Le délice des sens</strong><br><em>Folie-Méricourt</em></p>
+                        <div class="bouton-like-unlike">
+                            <i class="far fa-heart unvalide fa-lg"></i> <!-- bouton unlike default -->
+                            <div class="bouton-like">
+                                <i class="fas fa-heart valide fa-lg"></i>
+                            </div>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+            </a>
+        </div>    
+    </div>
+
+
+<!-- FOOTER -->
+    <footer>
+        <img class=logo src="images/logo/ohmyfood.png" alt="ohmyfood"/>
+        <ul>
+            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li>Mentions legales</li>
+            <li><a>Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
