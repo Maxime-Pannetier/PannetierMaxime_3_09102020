@@ -1,0 +1,93 @@
+/* INDEX ---------------------------------*/
+#fonctionnement
+{
+    height: auto;
+}
+
+
+#mode-emplois
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-column-gap: 20px
+}
+
+
+#restaurants
+{
+    height: auto;
+}
+
+#liste-restaurants
+{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+/* MENU RESTAURANTS -------------------------------------------------*/
+
+.image-presentation
+{
+    width:100%;
+    height: auto
+}
+
+#menu
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 80px;
+    grid-column-gap: 20px;
+}
+
+#nom-restau
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center; 
+}
+
+.bouton-like-unlike
+{
+    margin-left: 20px;
+}
+
+.entree
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.plat-principal
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.dessert
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+button
+{
+   grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: auto;
+}
