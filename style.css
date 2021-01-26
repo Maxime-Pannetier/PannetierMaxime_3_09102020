@@ -668,6 +668,11 @@ header i
     animation-delay: 600ms
 }
 
+.four /* TROISIEME PLAT */
+{
+    animation-delay: 900ms
+}
+
 /* --------------- ANIMATION APPARITION COCHE VALIDEE ---------------------*/
 
 .presentation-plat:hover .prix-validation /* DECALAGE DE LA DIV PRIX-VALIDATION */
