@@ -133,9 +133,14 @@ button
     box-shadow: 5px 5px 10px #c6c6c6;
 }
 
-button:focus
+button:hover
 {
     outline: none;
+    opacity: 0.85;
+    transition: opacity 400ms;
+    transition: box-shadow 400ms;
+    transition-timing-function: ease-out;
+    box-shadow: 8px 8px 13px #a6a6a6; 
 }
 
 button p
@@ -300,12 +305,14 @@ button p
 {
     opacity: 1;
     z-index: 1;
+    transition: opacity 500ms;
 }
 
 .unvalide:active
 {
     z-index: -1;
     opacity: 0;
+    transition: opacity 500ms;
 }
 
 .bouton-like
@@ -320,7 +327,6 @@ button p
     -webkit-text-fill-color: transparent;
     opacity: 0;
     z-index: -1;
-    transition: transform 250ms;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,7 +532,7 @@ header i
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 0.8em
+    font-size: 0.8em;
 }
 
 .nom-plat strong
@@ -544,6 +550,9 @@ header i
 .nom-plat p
 {
     margin: auto 0 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* PRIX + VALIDATION */
